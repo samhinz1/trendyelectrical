@@ -22,13 +22,13 @@ export const config = {
   // Visual branding
   branding: {
     logo: {
-      path: '/trendylogo.SVG',
+      path: '/trendylogo.svg',
       width: 160,
       height: 80,
       altText: 'Trendy Electrical Logo'
     },
     icon: {
-      path: '/trendyicon.SVG',
+      path: '/trendyicon.svg',
       width: 32,
       height: 32,
       altText: 'Trendy Electrical Icon'
