@@ -184,7 +184,7 @@ export default function Home() {
                 Residential & Commercial Electrical Services
               </h2>
               <p className="text-[#494544] mt-4 max-w-3xl">
-                Comprehensive electrical solutions catering to all customer needs across Gold Coast & Brisbane.
+                Comprehensive electrical solutions catering to all customer needs across Brisbane
               </p>
             </motion.div>
 

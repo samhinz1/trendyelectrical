@@ -34,7 +34,7 @@ export const config = {
       altText: 'Trendy Electrical Icon'
     },
     colors: {
-      primary: '#242131',      // Dark blue/navy
+      primary: '#242131',      // Dark blue/navys
       secondary: '#d4af37',    // Gold
       text: '#494544',         // Dark gray
       background: '#f5f5f5',   // Light gray
