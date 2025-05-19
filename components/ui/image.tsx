@@ -1,14 +1,15 @@
 import NextImage, { ImageProps as NextImageProps } from 'next/image';
+import { config } from '@/lib/config';
 
-interface ImageProps extends Omit<NextImageProps, 'src'> {
+type ImageProps = NextImageProps & {
   src: string;
-}
+};
 
 /**
  * A custom Image component that handles GitHub Pages basePath for image sources
  */
 export function Image({ src, ...props }: ImageProps) {
-  // Since we're now manually adding basePath in the component usage,
-  // we don't need to add it again here to avoid double paths
-  return <NextImage src={src} {...props} />;
+  // Ensure the src path is properly formatted with basePath
+  const formattedSrc = src.startsWith('http') ? src : `${config.basePath}${src}`;
+  return <NextImage src={formattedSrc} {...props} />;
 } 
