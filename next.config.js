@@ -3,7 +3,7 @@ const nextConfig = {
   output: 'export',
   // Ensures page build works correctly on GitHub Pages
   basePath: process.env.NODE_ENV === 'production' ? '/trendyelectrical' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/trendyelectrical/' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/trendyelectrical' : '',
   images: {
     unoptimized: true,
   },
