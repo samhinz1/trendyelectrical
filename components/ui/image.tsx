@@ -9,7 +9,12 @@ type ImageProps = NextImageProps & {
  * A custom Image component that handles GitHub Pages basePath for image sources
  */
 export function Image({ src, ...props }: ImageProps) {
-  // Ensure the src path is properly formatted with basePath
-  const formattedSrc = src.startsWith('http') ? src : `${config.basePath}${src}`;
+  // Handle both absolute URLs and relative paths
+  const formattedSrc = src.startsWith('http') 
+    ? src 
+    : src.startsWith('/') 
+      ? `${config.basePath}${src}`
+      : `${config.basePath}/${src}`;
+      
   return <NextImage src={formattedSrc} {...props} />;
 } 
