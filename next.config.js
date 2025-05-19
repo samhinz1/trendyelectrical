@@ -6,12 +6,6 @@ const nextConfig = {
   assetPrefix: process.env.NODE_ENV === 'production' ? '/trendyelectrical' : '',
   images: {
     unoptimized: true,
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'randomuser.me',
-      },
-    ],
   },
   // Add trailing slash to pages (needed for GitHub Pages)
   trailingSlash: true,
