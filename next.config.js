@@ -7,7 +7,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Add trailing slash to pages (needed for GitHub Pages)
+  // Add trailing slash to pages (needed for GitHub Pages)a
   trailingSlash: true,
   // For TypeScript errors during build
   typescript: {
